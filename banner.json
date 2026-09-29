@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-07-servo-position",
+  "eyebrow": "PICOKIT // LESSON 07",
+  "title": "PICOKIT // SERVO POSITION",
+  "subtitle": "SG90 SERVO POSITION AND AUTHENTICATED HEARTBEAT",
+  "accent": "#8824FF",
+  "dim": "#54169E",
+  "white": "#E3D7FF",
+  "cyan": "#7FD8E0",
+  "bg": "#090211",
+  "bg_edge": "#020005",
+  "icon": "servo",
+  "panel_status": "POS 90 / 180  ·  IR + CONSOLE  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "SERVO",
+      "value": "90 deg"
+    },
+    {
+      "label": "SOURCE",
+      "value": "IR/CLI"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-38 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00007  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] set angle 90  source console  onboard blink",
+    "[+] ack sent  rssi -38  snr 9.2"
+  ],
+  "categories": [
+    "SERVO",
+    "POSITION",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "POS-01",
+      "label": "ir",
+      "value": "0-180"
+    },
+    {
+      "tag": "POS-02",
+      "label": "console",
+      "value": "0-180"
+    },
+    {
+      "tag": "POS-03",
+      "label": "clamp",
+      "value": "180"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ POS ]=="
+  ],
+  "layout": "split",
+  "stat": "90 deg"
+}
